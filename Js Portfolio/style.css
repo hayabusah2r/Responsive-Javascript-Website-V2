@@ -1,0 +1,247 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 45px;
+    margin-top: 50px;
+    color: rgb(0, 204, 0);
+}
+a{
+    color: rgb(0, 204, 0);
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(1, 163, 1);
+}
+p{
+    font-size: 20px;
+    margin-top: -20px;
+    color: rgb(0, 204, 0);
+}
+button{
+    font-size: 16px;
+    color: rgb(0, 204, 0);
+    background-color: rgb(0, 204, 0);
+    margin-bottom: 30px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border-color: rgb(0, 204, 0);
+    border-style: dotted;
+    border-radius: 10px;
+    width: 15%;
+    height: 35px;
+    transition: 0.5s;
+}
+button:hover{
+    border-color: black;
+    background-color: rgb(0, 204, 0);
+    color: black;
+}
+
+#myDIV{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 204, 0);
+    margin-left: 30%;
+    margin-right: 30%;
+    overflow: auto;
+}
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 204, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: rgb(0, 204, 0);
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    color: red;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#Services{
+    margin-top: 150px;
+}
+h2{
+    color: rgb(0, 204, 0);
+    margin-bottom: -50px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+#works{
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 204, 0);
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#preview{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#title{
+    margin-top: 150px;
+}
+#numbers{
+    margin-top: 45px;
+    font-size: 60px;
+}
+#details{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-top: -50px;
+}
+.tab{
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: black;
+}
+.tab button{
+    font-size: 16px;
+    color: rgb(0, 204, 0);
+    background-color: rgb(0, 204, 0);
+    margin-bottom: 30px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border-color: rgb(0, 204, 0);
+    border-style: dotted;
+    border-radius: 10px;
+    width: 15%;
+    height: 35px;
+    transition: 0.5s;
+}
+.tab button:hover{
+    border-color: black;
+    background-color: rgb(0, 204, 0);
+    color: black;
+}
+input[type=text], select, textarea {
+    color: rgb(0, 204, 0);
+    font-size: 17px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(0, 204, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    font-size: 17px;
+    color: rgb(0, 204, 0);
+    background-color: rgb(0, 204, 0);
+    margin-bottom: 30px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border-color: rgb(0, 204, 0);
+    border-style: dotted;
+    border-radius: 10px;
+    width: 30%;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover {
+    border-color: black;
+    background-color: rgb(0, 204, 0);
+    color: black;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#myBtn {
+    width: 10%;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 204, 0); /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px 20px 30px; /* Some padding */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 50px; /* Increase font size */
+  }
+  
+#myBtn:hover {
+    background-color: #555;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+@media only screen and (max-width: 600px) {
+    p{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #works{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    button{
+        width: 30%;
+        height: 35px;
+    }
+    .tab button{
+        width: 30%;
+        height: 35px;
+    }
+    #myDIV{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    input[type=submit] {
+        width: 30%;
+        height: 35%;
+    }
+    .container{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #myBtn{
+        width: 15%;
+    }
+}

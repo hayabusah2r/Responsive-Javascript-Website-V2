@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Portfolio Website</title>
+</head>
+<body>
+    <span style="font-size: 30px;cursor:pointer;color: rgb(0, 204, 0);" onclick="openNav()">&#9776; Menu</span>
+    <div id="Home">
+        <center><h1>I am <a href="">Seaam</a></h1></center>
+        <center><p>Welcome to my Portfolio</p></center>
+        <center><button onclick="myFunction()">Click Me</button></center>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↟</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+    <div id="myDIV">
+        "I am a front-end web developer. I love to create simple yet meaningful websites with strong focus on responsive design, accessibility and performance. I have completed learning HTML, CSS and now I am currently learning Javascript."
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#Home">Home</a>
+        <a href="#Services">Services</a>
+        <a href="#Stats">Stats</a>
+        <a href="#Skills">Skills</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="Services">
+        <center><h1>Services</h1></center>
+        <center><p>Works I do</p></center>
+        <center><h2>Web Design</h2></center>
+        <center><p id="works">I build up the high performance website with blazing fast speed. Website with high performance can lead the visitor more.</p></center>
+        <center><h2>UI/UX</h2></center>
+        <center><p id="works">I do ui/ux design for the website that assists website to get an outstanding look. Unique design creates an unique personality for websites.</p></center>
+        <center><h2>Back-End Process</h2></center>
+        <center><p id="works">I also handle the back-end process of websites. It is neccesary for a perfect website.</p></center>
+    </div>
+
+    <div id="Stats">
+        <center><h1 id="title">Stats</h1></center>
+        <center><p>My Recent Statistics</p></center>
+        <center><h2 id="numbers">50+</h2></center>
+        <center><p id="details">Projects Done</p></center>
+        <center><h2 id="numbers">30+</h2></center>
+        <center><p id="details">Websites Made</p></center>
+        <center><h2 id="numbers">2+</h2></center>
+        <center><p id="details">Years Experience</p></center>
+    </div>
+
+    
+    <div id="Skills">
+        <center><h1 id="title">Skills</h1></center>
+        <center><p>My Recent Works and Awards</p></center>
+        <div class="tab">
+            <center><button class="tablinks" onclick="openCity(event,'London')">Projects</button> <button class="tablinks" onclick="openCity(event,'Paris')">Awards</button></center>
+        </div>
+        <div id="London" class="tabcontent">
+            <center><h2>Personal Website</h2></center>
+            <center><p id="works">A modern and responsive portfolio website made with HTML, CSS and simple codes of Javascript. <br><br> Watch it <a id="preview" href="">here</a></p></center>
+            <center><h2>Basic Calculator</h2></center>
+            <center><p id="works">This is a creative web application made by me. The calculator is fully working and it has no errors and glitches. <br><br> Watch it <a id="preview" href="">here</a></p></center>
+            <center><h2>Music Website</h2></center>
+            <center><p id="works">I created this web application just by using basic codes of HTML and CSS. It is fully responsive and working. <br><br> Watch it <a id="preview" href="">here</a></p></center>
+            <center><h2>Teaching Website</h2></center>
+            <center><p id="works">This is a website for teaching purpose. It contains all the course plans and other necessary infos about teaching. It is made with HTML, CSS and Javascript. <br><br> Watch it <a id="preview" href="">here</a></p></center>
+            <center><h2>E-Commerce</h2></center>
+            <center><p id="works">This is a website for showcasing cars and selling them. Created with HTML, CSS and basic codes of Javascript. <br><br> Watch it <a id="preview" href="">here</a></p></center>
+        </div>
+        
+        <div id="Paris" class="tabcontent">
+            <center><h2>Typing Certificate</h2></center>
+            <center><p id="works">This is a certificate of typing speed from "TypingTest.com". The certification test consists of 5 minutes of typing predefined source text in English. The results are calculated based on International Industrial Standards to count typing speed. <br><br> Download it from <a id="preview" href="">here</a></p></center>
+            <center><h2>CSS Certificate</h2></center>
+            <center><p id="works">This is a certificate based on CSS basics from "W3docs.com". I've taken a test on CSS basics and got 95% score, as well as a certificate. <br><br> Download it from <a id="preview" href="">here</a></p></center>
+        </div>
+    </div>
+
+    <div id="Contact">
+        <center><h1 id="title">Contact Me</h1></center>
+        <center><p>Get in touch</p></center>
+        <div class="container">
+            <form action="form.html">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit" onclick="location.href='form.html'">
+            </form>
+          </div>
+    </div>
+        
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent =
+        document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks =
+        document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className =
+        tablinks[i].className.replace("active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += "active";
+        }
+    </script>
+    
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            }else{
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
